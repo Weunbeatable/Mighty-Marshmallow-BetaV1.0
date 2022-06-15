@@ -12,6 +12,7 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] Vector2 deathFling = new Vector2(10f, 10f);
     [SerializeField] GameObject generatedPlayerProjectile;
     [SerializeField] Transform swordSlashTip;
+    public ParticleSystem dust;
 
     [SerializeField] bool applyCameraShake;
     CameraShake cameraShake;
@@ -79,6 +80,8 @@ public class PlayerMover : MonoBehaviour
             {
                 playerBody.velocity += new Vector2(0f, jumpSpeed);
                 playerAnimations.SetBool("isJumping", PlayerhasVerticalSpeed);
+                CreateDust();
+
                
             }
 
@@ -103,12 +106,7 @@ public class PlayerMover : MonoBehaviour
         if ( playerIsFalling)
         {
             playerAnimations.SetBool("isFalling", true);
-
-
         }
-       
-
-
     }
 
 
@@ -120,6 +118,7 @@ public class PlayerMover : MonoBehaviour
         bool PlayerhasHorizontalSpeed = Mathf.Abs(playerBody.velocity.x) > Mathf.Epsilon;
 
         playerAnimations.SetBool("isRunning", PlayerhasHorizontalSpeed);
+        
 
 
     }
@@ -131,7 +130,9 @@ public class PlayerMover : MonoBehaviour
 
         if (PlayerhasHorizontalSpeed)
         {
+           
             transform.localScale = new Vector2(Mathf.Sign(playerBody.velocity.x), 1f);
+           
         }
     }
 
@@ -154,7 +155,7 @@ public class PlayerMover : MonoBehaviour
         if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climibing"))) 
         {
             playerBody.gravityScale = startingGravity;
-            playerAnimations.SetBool("isIdle", false);
+            playerAnimations.SetBool("isClimbing", false);
             return;
         }
 
@@ -194,5 +195,10 @@ public class PlayerMover : MonoBehaviour
             cameraShake.Play();
            
         }
+    }
+    
+    void CreateDust()
+    {
+        dust.Play();
     }
 }

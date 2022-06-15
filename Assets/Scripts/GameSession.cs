@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-   
+    [SerializeField] TextMeshProUGUI livesText;
+    [SerializeField] public TextMeshProUGUI ScoreText;
+    [SerializeField] int score = 0;
     private void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -20,8 +23,12 @@ public class GameSession : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
-   public IEnumerator ProcessPlayerDeath()
+    private void Start()
+    {
+        livesText.text = playerLives.ToString();
+        ScoreText.text = score.ToString();
+    }
+    public IEnumerator ProcessPlayerDeath()
     {
         if(playerLives > 1)
         {
@@ -35,15 +42,22 @@ public class GameSession : MonoBehaviour
         }
     }
 
+    public void AddToSCore(int pointsToAdd)
+    {
+        score += pointsToAdd;
+        ScoreText.text = score.ToString();
+    }
     private void TakeLife()
     {
         playerLives--;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+        livesText.text = playerLives.ToString();
     }
 
     private void ResetGameSession()
     {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
         Destroy(gameObject); // destroy this instance of game session if the game restarts.
     }

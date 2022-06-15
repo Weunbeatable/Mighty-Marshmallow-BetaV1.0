@@ -140,6 +140,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5f0b54628b7391549bf0cbed8e2b8780, type: 3}
   - {fileID: 8300000, guid: 991714a11fc055b45a2a5889c21805bb, type: 3}
   - {fileID: 8300000, guid: d18b915c5dc00e248b715268ca46c8f4, type: 3}
+  pointsForCoinPickup: 100
 --- !u!82 &8356368222228376195
 AudioSource:
   m_ObjectHideFlags: 0
@@ -152,7 +153,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.556
   m_Pitch: 1
   Loop: 0
   Mute: 0
