@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mat_background_bar
+  m_Shader: {fileID: 4800000, guid: 4452ea29bec676e41bdbccda3273b598, type: 3}
+  m_ShaderKeywords: CURVATURE_ON REFLECTION_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 62dcbac8f3861a54f8cc4a221623b839, type: 3}
+          m_Scale: {x: 1, y: .300000012}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _StencilMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Layer1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Layer2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Layer3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9fb28395a619ee24b84114c0d725ebb0, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TransmissionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
+          name: PixelSnap
+        second: 0
+      data:
+        first:
+          name: _Layer0ScrollingX
+        second: 0
+      data:
+        first:
+          name: _Layer0ScrollingY
+        second: 0
+      data:
+        first:
+          name: _Layer1Opacity
+        second: 1
+      data:
+        first:
+          name: _Layer1ScrollingX
+        second: 0
+      data:
+        first:
+          name: _Layer1ScrollingY
+        second: 0
+      data:
+        first:
+          name: _Layer2Opacity
+        second: 1
+      data:
+        first:
+          name: _Layer2ScrollingX
+        second: 0
+      data:
+        first:
+          name: _Layer2ScrollingY
+        second: 0
+      data:
+        first:
+          name: _Layer3Opacity
+        second: 1
+      data:
+        first:
+          name: _Layer3ScrollingX
+        second: 0
+      data:
+        first:
+          name: _Layer3ScrollingY
+        second: 0
+      data:
+        first:
+          name: _CurvatureDepth
+        second: .140000001
+      data:
+        first:
+          name: _Specular
+        second: .286000013
+      data:
+        first:
+          name: _ReflectionBlur
+        second: 0
+      data:
+        first:
+          name: _ReflectionStrength
+        second: 1
+      data:
+        first:
+          name: _ReflectionScrollingX
+        second: .25
+      data:
+        first:
+          name: _ReflectionScrollingY
+        second: .25
+      data:
+        first:
+          name: _EmissionStrength
+        second: 0
+      data:
+        first:
+          name: _EmissionBlendAnimation1
+        second: 0
+      data:
+        first:
+          name: _EmissionPulseSpeed1
+        second: 1
+      data:
+        first:
+          name: _EmissionStrength2
+        second: 0
+      data:
+        first:
+          name: _EmissionBlendAnimation2
+        second: 0
+      data:
+        first:
+          name: _EmissionPulseSpeed2
+        second: 1
+      data:
+        first:
+          name: _EmissionStrength3
+        second: 0
+      data:
+        first:
+          name: _EmissionBlendAnimation3
+        second: 0
+      data:
+        first:
+          name: _EmissionPulseSpeed3
+        second: 1
+      data:
+        first:
+          name: _TransmissionDensity
+        second: 0
+      data:
+        first:
+          name: _DissolveBlend
+        second: 0
+      data:
+        first:
+          name: _DissolveBorderWidth
+        second: 10
+      data:
+        first:
+          name: _DissolveGlowStrength
+        second: 1
+      data:
+        first:
+          name: _EmissionToggleAnimation3
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Layer1Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Layer2Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Layer3Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _EmissionTint
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _EmissionTint2
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _EmissionTint3
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _DissolveGlowColor
+        second: {r: 1, g: 1, b: 1, a: 1}

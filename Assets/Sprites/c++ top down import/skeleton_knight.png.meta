@@ -1,0 +1,4292 @@
+fileFormatVersion: 2
+guid: ffb9646eeb6cd1540863f8f9d4fda2b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton_knight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6bc229a48dda64599dc889a69c2371
+      internalID: 554598136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626aa326cb2e5ec45a8cc8c9142be3bc
+      internalID: -252649342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcecbbe5aa89744aa284e19a16833bb
+      internalID: 797552280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686f4851c84e1204b8258a8092713316
+      internalID: -828191180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64e510ec1b9eda4db6b3c48fe419d28
+      internalID: 1851630044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cbb40deb551734db9bc913768f3232
+      internalID: -1272929619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc05090321165c5499664f76f3119ee3
+      internalID: -520574561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_7
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52841f17477a70543830d5cab79ecfa9
+      internalID: -328823407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aed629bc0795df46ba3b5ee1340310b
+      internalID: 556343654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_9
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af87255fc716c84f9b0ddb0c25bffa6
+      internalID: -1018845401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_10
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c858662af4aa1441bfb6aa01743c29d
+      internalID: -878331449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_11
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc0d27794f6c8943a11c6bec90cd1d1
+      internalID: -553874202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_12
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa96aa28bfdc43499375f7dc1867cee
+      internalID: -1465668831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_13
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c25e1d7bda5be0449910d8a991ebebf
+      internalID: 1408252764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_14
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfc9973cae6d8b4eb8f9788a45752f6
+      internalID: -888487901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_15
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e51b1c658df474186b283a3140c3a6
+      internalID: -17480185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_16
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803d560d74fcd0b4ba085c5bc0158813
+      internalID: 110973604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_17
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938408cb6a811aa4aa765f85bc7254a4
+      internalID: -1769607902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_18
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038ca4b9eb6d70d44986f96a52406cbf
+      internalID: -1379296929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_19
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390d759d102f6124e831ad9931c45fc7
+      internalID: -631704285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_20
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ab3beff7a5ce64e96d87149642d8a7
+      internalID: 1088143301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_21
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa5b52af38bb7f4186edb4ef23aa19d
+      internalID: 575817841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_22
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed4cb00b87554f419c5834c83c79d27
+      internalID: 549109958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_23
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8284072043946034c86656f80a84c4af
+      internalID: -2110555104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_24
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4634e2b9192ff4793d9c9c3007adcf
+      internalID: -1562444366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_25
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5830a9faf498f40b79d29dbbe63d36
+      internalID: -2048859781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_26
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 894
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ddf60fa7384e9428871dd5f2bdfbb1
+      internalID: -630750192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1338e0a4a98f3384b9f1cf52bde299c7
+      internalID: -2062812805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a4c3fcc8b0ac045b6490e63e954b3f
+      internalID: -33111596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_29
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb0a432c4ffa014db030b253225cc92
+      internalID: -902582050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_30
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5673bef1c833a478580a2258f695a0
+      internalID: 1573090678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_31
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5274e0cdd7bd70046b062d3204f30597
+      internalID: 822851410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_32
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a36992e2d489d9489e5f2acc07bb8f3
+      internalID: -1221106395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_33
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74e5a7373937942b0a32445dd39ca4
+      internalID: 2145478986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_34
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8918954e0404494fac3d7f81fba9a07
+      internalID: 123486182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_35
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f5bf389641e3242b6ea22f16ae218d
+      internalID: -1354214537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_36
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6feecbb69ed2046a83bf1295a1e304
+      internalID: 118457127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_37
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14695a8b8e004f4097f7d2b6ae4c69a
+      internalID: 1868064308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_38
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108a701bbf83df34da93f34f2b01ea90
+      internalID: -1359736315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_39
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390d3c3708b209d4c8667fc71a2e379f
+      internalID: 1406306938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_40
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60ed33c2de900a4da67e431ab13525c
+      internalID: -1255103739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_41
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c1031adc98de647b9d68f41287cfc2
+      internalID: 1300899213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_42
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f2ca361d90961489cdc03f940af8ae
+      internalID: 477296794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_43
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8918565794bc04cbd6b9e509a7f535
+      internalID: 460479646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_44
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a23e0dd0a43304a91217707a650c0b
+      internalID: 279508386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_45
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abf8e47212c2e84fb4562f8f89fcb92
+      internalID: -609253177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_46
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85209b83573df1242bb695467584883b
+      internalID: 1223272968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_47
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355a63d97d4bf9d4e937a257f5f11610
+      internalID: -549224903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_48
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04acdbdf88fb7884d8f4256a3b6cc55b
+      internalID: -480158638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_49
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69362201d758f44fbc088d789687937
+      internalID: -1693096244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_50
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2ee9d8852824547959c0eb58d196fa
+      internalID: -2124778402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_51
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da54e3ad2844d604285f56f004802dd0
+      internalID: 347947305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_52
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f62004e06fdd94f9bc522b029f1841
+      internalID: 312580160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_53
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 764
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f00ccf001926cc41a75066d3b6f65c6
+      internalID: -1761805189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba8fa68486bd6c44b62fc14148c0e9e
+      internalID: -596765733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_55
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4643c1173136f3c4ba970e4541741845
+      internalID: 770242468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_56
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b6ede8e3fcaa14fa452fee11f046d1
+      internalID: 672616524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_57
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2969cbfdffc3c2439327591b016b93f
+      internalID: 358145355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_58
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5177da2f83afe084695ed0b5915f8662
+      internalID: 1604430910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_59
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4ea26a5b684ef43ba4e537d5470bb7
+      internalID: -1655770788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_60
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82eeb28a5a94e149af00c32d7701dc8
+      internalID: 1460794753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_61
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62a28479e68dbe4ab8a7fc048395839
+      internalID: -1710154059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_62
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7374c0a58d50c49964c0ef19ccbde3
+      internalID: -464660495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_63
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63057ee13470c3d45b3192317bc81205
+      internalID: -237454261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_64
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a901d9f45bbb0a54fb548616a05410d1
+      internalID: 1508516414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_65
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e66a8ce157cae44b805264eed437fb
+      internalID: -642025131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_66
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1527e0eb89c3b3648b8d72383a3be350
+      internalID: 1420227078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_67
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623c116add896eb4e9ee271d6985c5cb
+      internalID: -195084573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_68
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249e26e4f018bef45b38373ea2081b97
+      internalID: -2067097282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_69
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f080e7846c7a5a6478bd466367fd97da
+      internalID: 672002936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_70
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64d2019101ac9946a11b3152a0e9f8b
+      internalID: 1652984782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_71
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1564605e7fc43fc4c8e81fa7831cf7d2
+      internalID: -671633618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_72
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed981622068ecc94da9d8946b457baa0
+      internalID: 635090092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_73
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc82a5528b14dee4491e414f8a26381f
+      internalID: 2016937384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_74
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6896b7996367f4db71499238807755
+      internalID: 2048230907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_75
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eeffe4864c8014c8c62068b3ac0b5b
+      internalID: -1888788821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_76
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afaae5fdbba01242a6d08995af6cf17
+      internalID: 1927473536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_77
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36010a5a8f45f8845a6de929cdaccd77
+      internalID: -777789822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_78
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e4ab9754b7466479088ba5bd372cff
+      internalID: 1921292443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_79
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2461baa05a694a4dbcfce4925f666fd
+      internalID: -318233383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_80
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 634
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6162c325a10565d4c9864622710d122a
+      internalID: -960656737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644bf183578df744583097e9526cac6a
+      internalID: 336441431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_82
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb7bca639d7df646a5d77e39e66fd03
+      internalID: 700185787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_83
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc7265287750bb4e815c01031848517
+      internalID: -1213888552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_84
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15298c8d4f37a9b46ab5c322eeb4327e
+      internalID: 157794489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_85
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0feea852188ca1f4282c6b083b9a4650
+      internalID: 591055040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_86
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2cebd1a9c0125449e4a075159875da
+      internalID: 1699212619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_87
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca361f8a822b6747819b5335acd79af
+      internalID: -1038222921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_88
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00abb661b936364f909f7897ba72314
+      internalID: 154606054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_89
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d4251c1f17cb24bb8b9dfc4e28b3f2
+      internalID: 292790292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_90
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb487424c0d6d4e408d66799108954de
+      internalID: 1460895254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_91
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d223769d427c87d4ab116702e9404dfb
+      internalID: 852908425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_92
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8beb3beefddf2c24b89a6ccbb656a315
+      internalID: -674271749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_93
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec26e5f38b5abe749991809307341b99
+      internalID: -1496268845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_94
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb4fcb62b36a4d41b98f92e6b35bfa7
+      internalID: 1968762300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_95
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bcaf0c857573e4ab6adbaff3a7276f
+      internalID: -930069734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_96
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7581546b2a224d142b4f13a2063d4aef
+      internalID: -1987365573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_97
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ff9dc44fb53f74a922966094d7882a
+      internalID: -1350434316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_98
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5db942a40e3e74891af69a87e03fd3
+      internalID: -1819130675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_99
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c896df571fc814aa682c00d20aeec2
+      internalID: 215503379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_100
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd78cfefe555b9d4bac5863e405b1a68
+      internalID: -1105819031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_101
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a4fd72d58e4dc46b77605e3084b4b3
+      internalID: -1031007905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_102
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf793b1a331e35489c21ab4ed17b4c6
+      internalID: -1577990541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_103
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0d2a33a67c2404799f39dc03824511
+      internalID: 1002058515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_104
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4093ab635f5b9d4293c1a8dc280a295
+      internalID: -1353360586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_105
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a600492c530524b8814af34a872e00
+      internalID: 1878345067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_106
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6266f3946b0308a4a9ba1aee7221eace
+      internalID: 1850449757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_107
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 504
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500c72b153197d3459f1e020d4bf0db5
+      internalID: 2025712624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4039763572fc30b4f97f85e2e9d66faf
+      internalID: -931849642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_109
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb85420c5d95534d844cb06b23e8e66
+      internalID: -1682217178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_110
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bee10537d54bf145a784dcbe86029cd
+      internalID: 231569261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_111
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a63a8f9d689a14fae92b39dbfc0d77
+      internalID: -820603751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_112
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1efa33012ebd144fa8e4a7e918d3733
+      internalID: 769689181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_113
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2864128c0ff9d644a13c8aa4b6ed8f2
+      internalID: -651723152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_114
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7b2c64ffbf7a74c980fb65a39e6c74
+      internalID: 1794025571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_115
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed7dd7dba3c0694695354f8d703e201
+      internalID: 1895141255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_116
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e0d99f28cb49546b40cfacebd7592a
+      internalID: -810289981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_117
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02564404ff5a416419a351ffa9e57a68
+      internalID: 1601592896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_118
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d12ea0956f684391e873b604980f8
+      internalID: -1047470332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_119
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1378416221fb34d4692c26e07e14894d
+      internalID: 961020630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_120
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d392f7ea77d75f54a86cdc4993fd2783
+      internalID: -2076540459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_121
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91291351ed1d82c42a2e64ab561cc9f6
+      internalID: -2111306564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_122
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c8ac1a36c2a5149b524419539e54b1
+      internalID: 1047982078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_123
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6b8e56b74e1b44daba687c4bf8ac80
+      internalID: 1899163225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_124
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efa39c4251d6cc4e9bda2bf077ac20a
+      internalID: -1066154895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_125
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bbf08b8a197a149b209065bbb31edf
+      internalID: -1796824873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_126
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad3c5622e320794585ab2f111baacd3
+      internalID: -294179858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_127
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437f5e33bbcf5be4da22e8b39da32377
+      internalID: -1974263425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_128
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53665ea5cf1571544af09d9f1b352b43
+      internalID: -1892017192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_129
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a5edecdd8827d48accbd4299469654
+      internalID: -1386224514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_130
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a2022c212fb374d8fc8dbf1e6fde49
+      internalID: 1844945444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_131
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86b4d32f9ab6214cb7db0bb5ff6d8c8
+      internalID: -1920291616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_132
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89e4abe15c079641aea7e0744230665
+      internalID: -920534694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_133
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6259ad57525f43d48940f67f73f5d1f2
+      internalID: 1330136540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_134
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 374
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c13d3c648e3e964fa04e3fcd6f46d78
+      internalID: 1594663352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370443149eb71244cb6ef5e3cc9885b9
+      internalID: 1391888542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_136
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cfad73dd2295240b0b544ee1dc8569
+      internalID: -951857681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_137
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099e9599f8188a04f896eb662de82fb5
+      internalID: 1130077054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_138
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6471131bf11384a971e62653c76931
+      internalID: -400381944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_139
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe12cf227ff22a45b0afc5941da41c6
+      internalID: -1322144572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_140
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f743d2e76cefc740a8df9cd81d767a2
+      internalID: 2098519826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_141
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ef2cbcc88774a468a5c75888b69cde
+      internalID: -2127595144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_142
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de21144e367dfcf43a65ffa19a100068
+      internalID: -1177885852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_143
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445b1f0384a212d4ea9631bc0a7e4ef3
+      internalID: 829008026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_144
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca795d4957077c14ca9b834f481cfbf0
+      internalID: 1744892481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_145
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d392c3cb99d0945a3a65f59a04824b
+      internalID: 671147185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_146
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31df67860234bd0448583b9db9218302
+      internalID: 1813914808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_147
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee955edbabc788468a8a7c3e39b8b22
+      internalID: 876958775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_148
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d62fc6268c1d194fa6cad0bb1c64cce
+      internalID: 85679216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_149
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cad2b543fa7bc45b29b14bc1a842d2
+      internalID: -2086224923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_150
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93d27d8e27e5f547981b70ac0029332
+      internalID: 1584637855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_151
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca544aceb2403df40b2e28d6cdd05c75
+      internalID: -1951400317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_152
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee95a6655f2d40d4196cf2c56164871e
+      internalID: -586615672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_153
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b3f82b2a155fc43b4ad5d449975c88
+      internalID: -46364548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_154
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35e1a6d8493acd4d846a1e74ad37c9b
+      internalID: -284726661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_155
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803626b8195885f49880ae70ac5d011a
+      internalID: -970111114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_156
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4a4aaedf687ee45aeba3e03a0ff5ac
+      internalID: 1295414306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_157
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef152b4d86a43c45a86bcd584a18818
+      internalID: -1274987361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_158
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40aa745e2bdff6243969616d19fc3568
+      internalID: 381714856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_159
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314164d06317fdf47ad033deec0ef9ae
+      internalID: -424498772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_160
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884f109c1b460f24695664cb51ddfe42
+      internalID: 1695407586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_161
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 244
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e2ecf7e637bc74ba984f9c71dd6d38
+      internalID: -1187142226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8becc2d85d8c540968db57017dc4a0
+      internalID: 1409159860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_163
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e3afd0f09f0834db34558ae77413c3
+      internalID: 759469360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_164
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19008bb446f49a1498b63d5a41dd40d2
+      internalID: 754275432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_165
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5282fe527c448fc489af5cfc695ecada
+      internalID: -1486049048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_166
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a0320c30f74ba4ba0a84ade838fadd
+      internalID: 544466444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_167
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75df9712c4714e4c94a9127c35fa06a
+      internalID: -359937061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_168
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156b89537b5714b49a53b0e257118851
+      internalID: 2112577786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_169
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0ed8b85038977489a331dfcf5acd95
+      internalID: -2024246142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_170
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0202d98dab58b474faf3a0adcca533da
+      internalID: -1458543211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_171
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eccd0dc8d87e7f47b18670c32d67b61
+      internalID: -1303546998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_172
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9f95dc400454b46a4b519f7a864d7b
+      internalID: -225674949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_173
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da139892cd84b543b19e8fb297456f7
+      internalID: -188122665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_174
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae92e339f1e49c409642278158d4ff6
+      internalID: -320430225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_175
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c349e3c654f443044a9e9129f6e753a0
+      internalID: -1892431694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_176
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3c25d20a8d5ae4388e250a0830c92a
+      internalID: 1558140760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_177
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261eec5549a268940b6b67bd99b804ed
+      internalID: 1596486519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_178
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7b525aab9e51f48b5e52ed60c22b00
+      internalID: 1050743567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_179
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a25c91fdd640564abf4f823fb2aba45
+      internalID: -2085027652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_180
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52de80a9927c334989652b97ecbc8ff
+      internalID: -1099535319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_181
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32efd2db1099f1144a7b51394ebc1ddc
+      internalID: 1435130054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_182
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0830da48bc46d4f8a0c3ceb5db3395
+      internalID: -444265172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_183
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b95306cf013c9458e6d88adfac7179
+      internalID: -911157861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_184
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6806ee796d9e2bf43a41cfd8eabdcc14
+      internalID: 874524913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_185
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c085da7f3ddb8ae46abcd24dcfa9319f
+      internalID: -1466731107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_186
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0686a271b765f4a9a391fc586661e5
+      internalID: 1625342591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_187
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1aa6b02ca0fac4a98327c4d231d412
+      internalID: 1473932302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_knight_188
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 114
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260eeb65412d00843a2ea111da1105bb
+      internalID: 1045731612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton_knight_44: 279508386
+      skeleton_knight_164: 754275432
+      skeleton_knight_138: -400381944
+      skeleton_knight_0: 554598136
+      skeleton_knight_68: -2067097282
+      skeleton_knight_117: 1601592896
+      skeleton_knight_26: -630750192
+      skeleton_knight_11: -553874202
+      skeleton_knight_49: -1693096244
+      skeleton_knight_84: 157794489
+      skeleton_knight_169: -2024246142
+      skeleton_knight_120: -2076540459
+      skeleton_knight_96: -1987365573
+      skeleton_knight_6: -520574561
+      skeleton_knight_52: 312580160
+      skeleton_knight_180: -1099535319
+      skeleton_knight_98: -1819130675
+      skeleton_knight_106: 1850449757
+      skeleton_knight_123: 1899163225
+      skeleton_knight_73: 2016937384
+      skeleton_knight_93: -1496268845
+      skeleton_knight_22: 549109958
+      skeleton_knight_21: 575817841
+      skeleton_knight_72: 635090092
+      skeleton_knight_39: 1406306938
+      skeleton_knight_177: 1596486519
+      skeleton_knight_64: 1508516414
+      skeleton_knight_56: 672616524
+      skeleton_knight_46: 1223272968
+      skeleton_knight_141: -2127595144
+      skeleton_knight_110: 231569261
+      skeleton_knight_65: -642025131
+      skeleton_knight_101: -1031007905
+      skeleton_knight_155: -970111114
+      skeleton_knight_100: -1105819031
+      skeleton_knight_112: 769689181
+      skeleton_knight_131: -1920291616
+      skeleton_knight_129: -1386224514
+      skeleton_knight_176: 1558140760
+      skeleton_knight_158: 381714856
+      skeleton_knight_149: -2086224923
+      skeleton_knight_132: -920534694
+      skeleton_knight_154: -284726661
+      skeleton_knight_12: -1465668831
+      skeleton_knight_8: 556343654
+      skeleton_knight_42: 477296794
+      skeleton_knight_186: 1625342591
+      skeleton_knight_108: -931849642
+      skeleton_knight_28: -33111596
+      skeleton_knight_97: -1350434316
+      skeleton_knight_86: 1699212619
+      skeleton_knight_89: 292790292
+      skeleton_knight_116: -810289981
+      skeleton_knight_170: -1458543211
+      skeleton_knight_14: -888487901
+      skeleton_knight_5: -1272929619
+      skeleton_knight_91: 852908425
+      skeleton_knight_76: 1927473536
+      skeleton_knight_162: 1409159860
+      skeleton_knight_33: 2145478986
+      skeleton_knight_147: 876958775
+      skeleton_knight_173: -188122665
+      skeleton_knight_58: 1604430910
+      skeleton_knight_171: -1303546998
+      skeleton_knight_59: -1655770788
+      skeleton_knight_151: -1951400317
+      skeleton_knight_67: -195084573
+      skeleton_knight_25: -2048859781
+      skeleton_knight_124: -1066154895
+      skeleton_knight_24: -1562444366
+      skeleton_knight_92: -674271749
+      skeleton_knight_142: -1177885852
+      skeleton_knight_3: -828191180
+      skeleton_knight_150: 1584637855
+      skeleton_knight_4: 1851630044
+      skeleton_knight_81: 336441431
+      skeleton_knight_41: 1300899213
+      skeleton_knight_156: 1295414306
+      skeleton_knight_157: -1274987361
+      skeleton_knight_165: -1486049048
+      skeleton_knight_160: 1695407586
+      skeleton_knight_128: -1892017192
+      skeleton_knight_152: -586615672
+      skeleton_knight_27: -2062812805
+      skeleton_knight_80: -960656737
+      skeleton_knight_85: 591055040
+      skeleton_knight_167: -359937061
+      skeleton_knight_95: -930069734
+      skeleton_knight_51: 347947305
+      skeleton_knight_7: -328823407
+      skeleton_knight_54: -596765733
+      skeleton_knight_10: -878331449
+      skeleton_knight_122: 1047982078
+      skeleton_knight_185: -1466731107
+      skeleton_knight_136: -951857681
+      skeleton_knight_146: 1813914808
+      skeleton_knight_17: -1769607902
+      skeleton_knight_45: -609253177
+      skeleton_knight_184: 874524913
+      skeleton_knight_74: 2048230907
+      skeleton_knight_137: 1130077054
+      skeleton_knight_188: 1045731612
+      skeleton_knight_163: 759469360
+      skeleton_knight_57: 358145355
+      skeleton_knight_144: 1744892481
+      skeleton_knight_79: -318233383
+      skeleton_knight_75: -1888788821
+      skeleton_knight_183: -911157861
+      skeleton_knight_174: -320430225
+      skeleton_knight_38: -1359736315
+      skeleton_knight_166: 544466444
+      skeleton_knight_18: -1379296929
+      skeleton_knight_15: -17480185
+      skeleton_knight_63: -237454261
+      skeleton_knight_47: -549224903
+      skeleton_knight_66: 1420227078
+      skeleton_knight_105: 1878345067
+      skeleton_knight_83: -1213888552
+      skeleton_knight_62: -464660495
+      skeleton_knight_16: 110973604
+      skeleton_knight_113: -651723152
+      skeleton_knight_130: 1844945444
+      skeleton_knight_78: 1921292443
+      skeleton_knight_111: -820603751
+      skeleton_knight_82: 700185787
+      skeleton_knight_32: -1221106395
+      skeleton_knight_88: 154606054
+      skeleton_knight_159: -424498772
+      skeleton_knight_107: 2025712624
+      skeleton_knight_179: -2085027652
+      skeleton_knight_69: 672002936
+      skeleton_knight_40: -1255103739
+      skeleton_knight_87: -1038222921
+      skeleton_knight_55: 770242468
+      skeleton_knight_104: -1353360586
+      skeleton_knight_29: -902582050
+      skeleton_knight_139: -1322144572
+      skeleton_knight_60: 1460794753
+      skeleton_knight_125: -1796824873
+      skeleton_knight_182: -444265172
+      skeleton_knight_71: -671633618
+      skeleton_knight_187: 1473932302
+      skeleton_knight_43: 460479646
+      skeleton_knight_135: 1391888542
+      skeleton_knight_53: -1761805189
+      skeleton_knight_153: -46364548
+      skeleton_knight_126: -294179858
+      skeleton_knight_35: -1354214537
+      skeleton_knight_20: 1088143301
+      skeleton_knight_48: -480158638
+      skeleton_knight_70: 1652984782
+      skeleton_knight_36: 118457127
+      skeleton_knight_94: 1968762300
+      skeleton_knight_115: 1895141255
+      skeleton_knight_161: -1187142226
+      skeleton_knight_103: 1002058515
+      skeleton_knight_99: 215503379
+      skeleton_knight_50: -2124778402
+      skeleton_knight_168: 2112577786
+      skeleton_knight_37: 1868064308
+      skeleton_knight_109: -1682217178
+      skeleton_knight_31: 822851410
+      skeleton_knight_119: 961020630
+      skeleton_knight_121: -2111306564
+      skeleton_knight_102: -1577990541
+      skeleton_knight_178: 1050743567
+      skeleton_knight_23: -2110555104
+      skeleton_knight_114: 1794025571
+      skeleton_knight_148: 85679216
+      skeleton_knight_175: -1892431694
+      skeleton_knight_9: -1018845401
+      skeleton_knight_145: 671147185
+      skeleton_knight_2: 797552280
+      skeleton_knight_30: 1573090678
+      skeleton_knight_34: 123486182
+      skeleton_knight_90: 1460895254
+      skeleton_knight_140: 2098519826
+      skeleton_knight_118: -1047470332
+      skeleton_knight_77: -777789822
+      skeleton_knight_127: -1974263425
+      skeleton_knight_172: -225674949
+      skeleton_knight_61: -1710154059
+      skeleton_knight_134: 1594663352
+      skeleton_knight_1: -252649342
+      skeleton_knight_133: 1330136540
+      skeleton_knight_143: 829008026
+      skeleton_knight_13: 1408252764
+      skeleton_knight_19: -631704285
+      skeleton_knight_181: 1435130054
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
