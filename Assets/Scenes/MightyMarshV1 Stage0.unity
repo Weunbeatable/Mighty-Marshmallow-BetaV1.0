@@ -265,7 +265,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2189893, y: 1}
+    m_SensorSize: {x: 1.6085627, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2189893, y: 1}
+    m_SensorSize: {x: 1.6085627, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1774,7 +1774,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2189893, y: 1}
+    m_SensorSize: {x: 1.6085627, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4202,11 +4202,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3878973621998836155, guid: 4dcb23df12eb60f4a92f91a02f64f5a1, type: 3}
   m_PrefabInstance: {fileID: 1091404392}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1100499845 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6761445539029457314, guid: 7c8b24f94ff7d0c47907d83084cde958, type: 3}
-  m_PrefabInstance: {fileID: 6043018366529799937}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1154264277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4254,7 +4249,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2189893, y: 1}
+    m_SensorSize: {x: 1.6085627, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -31587,14 +31582,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1421490846287628551, guid: 7c8b24f94ff7d0c47907d83084cde958, type: 3}
-      propertyPath: dust
-      value: 
-      objectReference: {fileID: 1100499845}
-    - target: {fileID: 2857381055321369819, guid: 7c8b24f94ff7d0c47907d83084cde958, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.473
-      objectReference: {fileID: 0}
     - target: {fileID: 6043018365492575969, guid: 7c8b24f94ff7d0c47907d83084cde958, type: 3}
       propertyPath: m_Name
       value: Tryhard (Player)

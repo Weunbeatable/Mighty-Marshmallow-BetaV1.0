@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3852210425852191342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.47, z: 0}
+  m_LocalPosition: {x: 0, y: -0.473, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4990,9 +4990,11 @@ MonoBehaviour:
   RunSpeed: 5
   jumpSpeed: 13
   ClimbSpeed: 5
+  dashBoostSpped: 5
   deathFling: {x: 20, y: 20}
   generatedPlayerProjectile: {fileID: 7467877922243349983, guid: b4cb2294ffb1d59488acf13d94878125, type: 3}
   swordSlashTip: {fileID: 7790202718725254605}
+  dust: {fileID: 6761445539029457314}
   applyCameraShake: 1
 --- !u!70 &1346354822
 CapsuleCollider2D:

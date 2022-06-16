@@ -9,13 +9,16 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] float RunSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float ClimbSpeed = 5f;
+    [SerializeField] float dashBoostSpeed = 5f;
     [SerializeField] Vector2 deathFling = new Vector2(10f, 10f);
     [SerializeField] GameObject generatedPlayerProjectile;
     [SerializeField] Transform swordSlashTip;
     public ParticleSystem dust;
 
     [SerializeField] bool applyCameraShake;
+    public bool PlayerHasAirTime;
     CameraShake cameraShake;
+    Vector2 DashForce;
 
 
 
@@ -53,7 +56,9 @@ public class PlayerMover : MonoBehaviour
         flipSprite();
         onClimbladder();
         playerIsFalling();
+        playerIsJumping();
         PlayerIdleAnim();
+        lightDash();
         Die();
 
     }
@@ -73,25 +78,19 @@ public class PlayerMover : MonoBehaviour
     void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
-        bool PlayerhasVerticalSpeed = Mathf.Abs(playerBody.velocity.y) > Mathf.Epsilon;
+        bool PlayerhasVerticalSpeed = Mathf.Abs(playerBody.velocity.y) > 0f;
         if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
-        {
+
+       
             if (value.isPressed)
             {
                 playerBody.velocity += new Vector2(0f, jumpSpeed);
-                playerAnimations.SetBool("isJumping", PlayerhasVerticalSpeed);
+                
                 CreateDust();
-
-               
             }
-
-            /*playerAnimations.SetBool("isIdle", false);
-            playerAnimations.SetBool("isFalling", false);*/
-
+        
+            // playerAnimations.SetBool("isFalling", false);*
         }
-
-
-    }
 
     void OnFire(InputValue value)
     {
@@ -108,6 +107,15 @@ public class PlayerMover : MonoBehaviour
             playerAnimations.SetBool("isFalling", true);
         }
     }
+    void playerIsJumping()
+    {
+        if (!isAlive) { return; }
+        bool playerIsJumping = playerBody.velocity.y > 0f;
+        if (playerIsJumping)
+        {
+            playerAnimations.SetBool("isJumping", true);
+        }
+    }
 
 
     void Run()
@@ -122,7 +130,17 @@ public class PlayerMover : MonoBehaviour
 
 
     }
-
+    void lightDash()
+    {
+        
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {          
+                DashForce = new Vector2(150f, 0f);        
+                playerBody.AddForce(DashForce, ForceMode2D.Impulse);
+            Vector2.Lerp(transform.position, DashForce, 3f);
+        }
+      
+    }
     private void flipSprite()
     {
 
@@ -140,7 +158,7 @@ public class PlayerMover : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2(playerBody.velocity.x, playerBody.velocity.y);
         if (myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) ||
-            myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climibing")) 
+            myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climibing"))
             && playerVelocity.x == 0f && playerVelocity.y < Mathf.Epsilon)
         {
             playerAnimations.SetBool("isIdle", true);
@@ -201,4 +219,6 @@ public class PlayerMover : MonoBehaviour
     {
         dust.Play();
     }
+
+   
 }
