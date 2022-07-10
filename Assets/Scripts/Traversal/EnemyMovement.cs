@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMM.Combat;
 
 public class EnemyMovement : MonoBehaviour
 {

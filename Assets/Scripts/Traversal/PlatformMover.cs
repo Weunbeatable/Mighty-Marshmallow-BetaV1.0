@@ -54,7 +54,7 @@ public class PlatformMover : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Hero")
         {
             collision.gameObject.transform.SetParent(transform);
             Debug.Log("success");
@@ -64,7 +64,7 @@ public class PlatformMover : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Hero")
         {
             collision.gameObject.transform.SetParent(null);
         }
