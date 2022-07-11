@@ -37,6 +37,14 @@ namespace TMM.Control
         BoxCollider2D myFeetCollider;
 
 
+        // Player Dashing
+        private bool canDash = true;
+        private bool isDashing;
+        private float dashingStrength = 10f;
+        private float dashingTime = 0.2f;
+        private float dashingCooldown = 1f;
+        [SerializeField] TrailRenderer DashTrail;
+
         private void Awake()
         {
             cameraShake = Camera.main.GetComponent<CameraShake>();
@@ -63,18 +71,20 @@ namespace TMM.Control
         void Update()
         {
             if (!isAlive) { return; }
+            if (isDashing) { return; }
             Run();
             flipSprite();
             onClimbladder();
             playerIsFalling();
             playerIsJumping();
             PlayerIdleAnim();
+            startDash();
             //lightDash();
             Die();
 
         }
 
-
+       
 
 
 
@@ -252,6 +262,27 @@ namespace TMM.Control
             FlashStep.Play();
         }
 
-
+        void startDash()
+        {
+            if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+            {
+                StartCoroutine(Dash());
+            }
+        }
+        private IEnumerator Dash()
+        {
+            canDash = false;
+            isDashing = true;
+            float originalGravity = playerBody.gravityScale;
+            playerBody.gravityScale = 0f;
+            playerBody.velocity = new Vector2(transform.localScale.x * dashingStrength, moveInput.y * dashingStrength);
+            DashTrail.emitting = true;
+            yield return new WaitForSeconds(dashingTime); // only allow dashing for period of dash time
+            DashTrail.emitting = false;
+            playerBody.gravityScale = originalGravity; //reset gravity when dash is finished
+            isDashing = false;
+            yield return new WaitForSeconds(dashingCooldown); // cooldown for dashing.
+            canDash = true;
+        }
     }
 }
