@@ -16,8 +16,8 @@ namespace TMM.Control
         [SerializeField] float dashBoostSpeed = 5f;
         [SerializeField] Vector2 deathFling = new Vector2(10f, 10f);
         [SerializeField] Vector2 hurtFling = new Vector2(4f, 4f);
-        [SerializeField] GameObject generatedPlayerProjectile;
-        [SerializeField] Transform swordSlashTip;
+        [SerializeField] public GameObject generatedPlayerProjectile;
+        [SerializeField] public Transform swordSlashTip;
         [SerializeField] bool applyCameraShake;
         public bool PlayerHasAirTime;
 
@@ -45,6 +45,9 @@ namespace TMM.Control
         private float dashingCooldown = 1f;
         [SerializeField] TrailRenderer DashTrail;
 
+        // placeholder for combat system
+        DamageDealer damagedealt;
+        Fighting currentProjectile;
         private void Awake()
         {
             cameraShake = Camera.main.GetComponent<CameraShake>();
@@ -62,6 +65,8 @@ namespace TMM.Control
             playerAnimations = GetComponent<Animator>();
             playerCollider = GetComponent<CapsuleCollider2D>();
             myFeetCollider = GetComponent<BoxCollider2D>();
+            damagedealt = GetComponent<DamageDealer>();
+            currentProjectile = GetComponent<Fighting>();
             startingGravity = playerBody.gravityScale;
             isAlive = true;
         }
@@ -124,6 +129,7 @@ namespace TMM.Control
 
                     playerAnimations.SetTrigger("Attack");
                     Instantiate(generatedPlayerProjectile, swordSlashTip.position, Quaternion.identity);
+                   // damagedealt.GetDamage();
                     nextATtackTime = Time.time + .7f / attackRate;
                 }
             }
@@ -283,6 +289,15 @@ namespace TMM.Control
             isDashing = false;
             yield return new WaitForSeconds(dashingCooldown); // cooldown for dashing.
             canDash = true;
+        }
+        public Vector3 getSwordTip()
+        {
+            return swordSlashTip.position;
+        }
+        
+        public GameObject getProjectile()
+        {
+            return generatedPlayerProjectile;
         }
     }
 }
