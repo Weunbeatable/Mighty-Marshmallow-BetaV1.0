@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMM.core;
 
 public class Health : MonoBehaviour
 {
@@ -51,10 +52,17 @@ public class Health : MonoBehaviour
        if (isdead) { return; }
        isdead = true;
        GetComponent<Animator>().SetTrigger("die");
+      // GetComponent<ActionScheduler>().CancelCurrentACtion();
     }
 
     public float HealthValue()
     {
         return healthPoints;
     }
+
+    public bool IsDead()
+    {
+        return isdead;
+    }
 }
+

@@ -19,8 +19,8 @@ public class EnemyMovement : MonoBehaviour
     
     void Update()
     {
-        Health myHealth = GetComponent<Health>();
-        if (myHealth.HealthValue() < 0) { isAlive = false; }
+       // Health myHealth = GetComponent<Health>();
+       // if (myHealth.HealthValue() < 0) { isAlive = false; }
         if (!isAlive) { return; }
         myRigidbody.velocity = new Vector2 (moveSpeed, 0f);
     }
