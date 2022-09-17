@@ -9,23 +9,33 @@ using System;
 namespace RPG.Control
 {
     public class AIController:MonoBehaviour
-    {
+    {   [Tooltip("Patroll Behavior")]
+
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float engageDistace = 2f;
         [SerializeField] float patrolSpeed = 2f;
         [SerializeField] float suspicionTime = 5f;
-        [SerializeField] PatrolPath patrolPath;
-        [SerializeField] float waypointTolerance = 2f;
+        float timeSinceLastSawPlayer = Mathf.Infinity;
+        Vector2 guardingLocation;
+
+
+        // Class refrences
         Health health;
         Fighting fighter;
         GameObject player;
-
         Transform target;
         private Rigidbody2D myRigidbody;
 
-        Vector2 guardingLocation;
-        float timeSinceLastSawPlayer = Mathf.Infinity;
+
+       
+        
+        [Tooltip("Waypoint Behavior")]
+        [SerializeField] float waypointTolerance = 2f;
+        [SerializeField] PatrolPath patrolPath;
         int currentWaypointIndex = 0;
+        float timeSinceArrivedAtWaypoint = Mathf.Infinity;
+        float waypointDwellTime = 2f;
+
 
         //TODO: 
         //flip characters rotation depending on if at the end or start of waypoint cycle.
@@ -42,7 +52,7 @@ namespace RPG.Control
         }
         private void Update()
         {
-            if (health.IsDead())  return;
+            if (health.IsDead()) return;
 
             if (attackRangeofPlayer() && facingPlayer())
             {
@@ -57,11 +67,16 @@ namespace RPG.Control
             else
             {
                 print("I'm going back home");
-                PatrolBehavior();               
+                PatrolBehavior();
             }
 
-            timeSinceLastSawPlayer += Time.deltaTime; // will update by the amount the frame took on every frame. if we don't reset it, resets when we see player.
+            updateTimers();
+        }
 
+        private void updateTimers()
+        {
+            timeSinceLastSawPlayer += Time.deltaTime; // will update by the amount the frame took on every frame. if we don't reset it, resets when we see player.
+            timeSinceArrivedAtWaypoint += Time.deltaTime;
         }
 
         private void SuspicionBehavior()
@@ -75,17 +90,23 @@ namespace RPG.Control
         {
             //Vector2 nextPosition = guardingLocation;
 
-            if(patrolPath != null)
+            if (patrolPath != null)
             {
                 if (atWaypoint())
                 {
+                    timeSinceArrivedAtWaypoint = 0; // reset when arrived at next waypoint
                     CycleWaypoint();
                 }
-               Vector2  nextPosition = GetCurrentWaypoint();
-                float regularSpeed = patrolSpeed * Time.deltaTime;
-                GetComponent<Animator>().SetTrigger("idle");
-                transform.position = Vector2.Lerp(transform.position, nextPosition, regularSpeed);
-                Debug.Log( "The next pos is " + nextPosition);
+                if (timeSinceArrivedAtWaypoint > waypointDwellTime)
+                {
+                    Vector2 nextPosition = GetCurrentWaypoint();
+                    float regularSpeed = patrolSpeed * Time.deltaTime;
+                    GetComponent<Animator>().SetTrigger("idle");
+                    transform.position = Vector2.Lerp(transform.position, nextPosition, regularSpeed);
+                    Debug.Log("The next pos is " + nextPosition);
+                    //if (currentWaypointIndex == 0 || currentWaypointIndex)
+                }
+               
             }
              
             
