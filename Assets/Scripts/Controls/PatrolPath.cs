@@ -33,5 +33,18 @@ namespace TMM.Control
         {
             return transform.GetChild(i).position;
         }
+
+        public int GetCurrentIndex(int i)
+        {
+            if (i + 1 == transform.childCount) // In order for us to grab the corner case of returning 
+            {
+                return 0;
+            }
+            return i;
+        }
+        public int GetIndexSize()
+        {
+            return transform.childCount;
+        }
     }
 }
