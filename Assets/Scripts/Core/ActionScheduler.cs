@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace TMM.core
 {
@@ -10,6 +11,7 @@ namespace TMM.core
 
         public void StartAction(IAction action)
         {
+            print("Cancelling " + currentAction);
             if (currentAction == action) return;
             if (currentAction != null)
             {
@@ -21,6 +23,7 @@ namespace TMM.core
         public void CancelCurrentACtion()
         {
             StartAction(null);
+            InputValue value;
         }
 
     }

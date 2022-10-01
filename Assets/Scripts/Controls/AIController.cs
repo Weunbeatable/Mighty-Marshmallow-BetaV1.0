@@ -17,6 +17,10 @@ namespace RPG.Control
         [SerializeField] float suspicionTime = 5f;
         float timeSinceLastSawPlayer = Mathf.Infinity;
         Vector2 guardingLocation;
+        Vector2 Starting_Facing_Position;
+        Vector2 FinalFacingPosition;
+       
+        
 
 
         // Class refrences
@@ -25,7 +29,7 @@ namespace RPG.Control
         GameObject player;
         Transform target;
         private Rigidbody2D myRigidbody;
-
+       
 
        
         
@@ -48,12 +52,15 @@ namespace RPG.Control
             fighter = GetComponent<Fighting>();
             health = GetComponent<Health>();
             guardingLocation = this.transform.position;
+            Starting_Facing_Position = this.transform.localScale *-1 ;
+            FinalFacingPosition = this.transform.localScale * -1;
+           
             
         }
         private void Update()
         {
             if (health.IsDead()) return;
-
+            DirectionToFace();
             if (attackRangeofPlayer() && facingPlayer())
             {
                 EngageBehavior();
@@ -66,11 +73,28 @@ namespace RPG.Control
             }
             else
             {
-                print("I'm going back home");
+                // print("I'm going back home");
                 PatrolBehavior();
             }
 
             updateTimers();
+        }
+
+        private void DirectionToFace()
+        {
+            if (patrolPath.GetNextIndex(currentWaypointIndex) == 1)
+            {
+               
+                 this.transform.localScale =  new Vector2(-1, 1);
+                
+
+            }
+            else if (patrolPath.GetNextIndex(currentWaypointIndex) == patrolPath.GetNextIndex(currentWaypointIndex))
+                {
+                //  Vector2 flipSIdes = this.transform.localScale;
+                this.transform.localScale = new Vector2(1, 1);
+              
+            }
         }
 
         private void updateTimers()
@@ -81,7 +105,7 @@ namespace RPG.Control
 
         private void SuspicionBehavior()
         {
-            print("Hmm kinda sus bro");
+          //  print("Hmm kinda sus bro");
             Vector2 holdPosition = transform.position;
             transform.position = holdPosition;
         }
@@ -93,20 +117,18 @@ namespace RPG.Control
             if (patrolPath != null)
             {
                 if (atWaypoint())
-                {
-                    timeSinceArrivedAtWaypoint = 0; // reset when arrived at next waypoint
+                {                  
+                    timeSinceArrivedAtWaypoint = 0; // reset when arrived at next waypoint                
                     CycleWaypoint();
                 }
                 if (timeSinceArrivedAtWaypoint > waypointDwellTime)
                 {
-                    Vector2 nextPosition = GetCurrentWaypoint();
-                    float regularSpeed = patrolSpeed * Time.deltaTime;
-                    GetComponent<Animator>().SetTrigger("idle");
-                    transform.position = Vector2.Lerp(transform.position, nextPosition, regularSpeed);
-                    Debug.Log("The next pos is " + nextPosition);
+                    MoveToNextPoint();
+                    GetComponent<Animator>().SetTrigger("walk");
+                    //Debug.Log("The next pos is " + nextPosition);
                     //if (currentWaypointIndex == 0 || currentWaypointIndex)
                 }
-               
+
             }
              
             
@@ -114,6 +136,14 @@ namespace RPG.Control
            
           
         }
+
+        private void MoveToNextPoint()
+        {
+            Vector2 nextPosition = GetCurrentWaypoint();
+            float regularSpeed = patrolSpeed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, nextPosition, regularSpeed);       
+        }
+        
 
         private Vector2 GetCurrentWaypoint()
         {
@@ -123,12 +153,14 @@ namespace RPG.Control
         private void CycleWaypoint()
         {
             currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex);
+
         }
 
         private bool atWaypoint()
         {
             float distanceToWaypoint = Vector2.Distance(transform.position, GetCurrentWaypoint());
-            Debug.Log("waypointdistance is" + distanceToWaypoint);
+            GetComponent<Animator>().SetTrigger("idle");
+            // Debug.Log("waypointdistance is" + distanceToWaypoint);
             return distanceToWaypoint < waypointTolerance;
         }
 
