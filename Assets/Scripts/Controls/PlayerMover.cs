@@ -10,24 +10,35 @@ namespace TMM.Control
 {
     public class PlayerMover : MonoBehaviour
     {
+        [Header("MovementSpeed")]
         [SerializeField] float RunSpeed = 5f;
-        [SerializeField] float jumpSpeed = 5f;
         [SerializeField] float ClimbSpeed = 5f;
         [SerializeField] float dashBoostSpeed = 5f;
         [SerializeField] Vector2 deathFling = new Vector2(10f, 10f);
         [SerializeField] Vector2 hurtFling = new Vector2(4f, 4f);
+        
+
+        [Header("JumpTools")]
+        public bool PlayerHasAirTime;
+        [SerializeField] float fallMultiplier = 2.5f;
+        [SerializeField] float lowJumpMultiplier = 2f;
+        [SerializeField] float jumpSpeed = 5f;
+
+
+        [Header("DashMechanic")]
+        public ParticleSystem dust;
+        public ParticleSystem FlashStep;
         [SerializeField] public GameObject generatedPlayerProjectile;
         [SerializeField] public Transform swordSlashTip;
         [SerializeField] bool applyCameraShake;
-        public bool PlayerHasAirTime;
 
-        public ParticleSystem dust;
-        public ParticleSystem FlashStep;
+        [Header("AttackMechanics")]
         public float attackRate = 1f;
         float nextATtackTime = 0f;
         int attackCounter = 0;
 
 
+        [Header("GeneralPlayerComponents")]
         CameraShake cameraShake;
         Vector2 DashForce;
         Vector2 moveInput;
@@ -57,7 +68,7 @@ namespace TMM.Control
 
         float startingGravity;
         bool isAlive = true;
-
+        bool jumpRequest;
 
         void Start()
         {
@@ -69,7 +80,9 @@ namespace TMM.Control
             currentProjectile = GetComponent<Fighting>();
             startingGravity = playerBody.gravityScale;
             isAlive = true;
-        }
+            InputValue value;
+        
+            }
 
 
         // Update is called once per frame
@@ -89,8 +102,32 @@ namespace TMM.Control
 
         }
 
-       
 
+        private void FixedUpdate()
+        {
+            bool PlayerhasVerticalSpeed = Mathf.Abs(playerBody.velocity.y) > 0f;
+            if (jumpRequest)
+            {
+                {
+                    //playerBody.velocity += new Vector2(0f, jumpSpeed);
+                    playerBody.AddForce(new Vector2(0f, jumpSpeed), ForceMode2D.Impulse);
+                    CreateDust();
+                    jumpRequest = false;
+                   
+                }
+
+            }
+
+         /*   else if (!jumpRequest && PlayerhasVerticalSpeed)
+            {
+                playerBody.gravityScale = lowJumpMultiplier;
+                // playerBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            }
+            else
+            {
+                playerBody.gravityScale = 1;
+            }*/
+        }
 
 
         void OnMove(InputValue value)
@@ -110,10 +147,14 @@ namespace TMM.Control
 
             if (value.isPressed)
             {
-                playerBody.velocity += new Vector2(0f, jumpSpeed);
-
-                CreateDust();
+                jumpRequest = true;
+         
             }
+
+            /* if (Mathf.Abs(playerBody.velocity.y) > 0f && !value.isPressed )
+            {
+                playerBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            }*/
 
             // playerAnimations.SetBool("isFalling", false);*
         }
@@ -134,6 +175,8 @@ namespace TMM.Control
                 }
             }
         }
+
+        
         void playerIsFalling()
         {
             if (!isAlive) { return; }
@@ -141,6 +184,10 @@ namespace TMM.Control
             if (playerIsFalling)
             {
                 playerAnimations.SetBool("isFalling", true);
+            }
+            if (playerIsFalling && !myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climibing")))
+            {
+                playerBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
             }
         }
         void playerIsJumping()
