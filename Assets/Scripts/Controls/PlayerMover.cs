@@ -28,15 +28,8 @@ namespace TMM.Control
         [Header("DashMechanic")]
         public ParticleSystem dust;
         public ParticleSystem FlashStep;
-        [SerializeField] public GameObject generatedPlayerProjectile;
-        [SerializeField] public Transform swordSlashTip;
         [SerializeField] bool applyCameraShake;
-
-        [Header("AttackMechanics")]
-        public float attackRate = 1f;
-        float nextATtackTime = 0f;
-        int attackCounter = 0;
-
+        [SerializeField] TrailRenderer DashTrail;
 
         [Header("GeneralPlayerComponents")]
         CameraShake cameraShake;
@@ -54,11 +47,11 @@ namespace TMM.Control
         private float dashingStrength = 10f;
         private float dashingTime = 0.2f;
         private float dashingCooldown = 1f;
-        [SerializeField] TrailRenderer DashTrail;
+        
 
         // placeholder for combat system
         DamageDealer damagedealt;
-        Fighting currentProjectile;
+       
         private void Awake()
         {
             cameraShake = Camera.main.GetComponent<CameraShake>();
@@ -77,7 +70,6 @@ namespace TMM.Control
             playerCollider = GetComponent<CapsuleCollider2D>();
             myFeetCollider = GetComponent<BoxCollider2D>();
             damagedealt = GetComponent<DamageDealer>();
-            currentProjectile = GetComponent<Fighting>();
             startingGravity = playerBody.gravityScale;
             isAlive = true;
             InputValue value;
@@ -96,7 +88,7 @@ namespace TMM.Control
             playerIsFalling();
             playerIsJumping();
             PlayerIdleAnim();
-            startDash();
+          // startDash();
             //lightDash();
             Die();
 
@@ -160,21 +152,6 @@ namespace TMM.Control
         }
 
         //TO DO decouple fire from player mover into combat namespace/ combat class. 
-        void OnFire(InputValue value)
-        {
-            if (!isAlive) { return; }
-            if (Time.time > nextATtackTime)
-            {
-                if (value.isPressed)
-                {
-
-                    playerAnimations.SetTrigger("Attack");
-                    Instantiate(generatedPlayerProjectile, swordSlashTip.position, Quaternion.identity);
-                   // damagedealt.GetDamage();
-                    nextATtackTime = Time.time + .7f / attackRate;
-                }
-            }
-        }
 
         
         void playerIsFalling()
@@ -283,7 +260,7 @@ namespace TMM.Control
          }*/
         private void Die()
         {
-            if (playerBody.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
+            if (playerBody.IsTouchingLayers(LayerMask.GetMask(/*"Enemies"*/, "Hazards")))
             {
                 isAlive = false;
                 playerAnimations.SetTrigger("isDead");
@@ -299,7 +276,7 @@ namespace TMM.Control
         //TO DO Decouple shake Camera into Core namespace. 
         private void ShakeCamera()
         {
-            if (cameraShake != null && applyCameraShake)
+            if (cameraShake != null && applyCameraShake && !isAlive)
             {
                 cameraShake.Play();
 
@@ -319,6 +296,13 @@ namespace TMM.Control
         {
             if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
             {
+                
+            }
+        }
+        void OnDash(InputValue value)
+        {
+            if (canDash)
+            {
                 StartCoroutine(Dash());
             }
         }
@@ -337,14 +321,6 @@ namespace TMM.Control
             yield return new WaitForSeconds(dashingCooldown); // cooldown for dashing.
             canDash = true;
         }
-        public Vector3 getSwordTip()
-        {
-            return swordSlashTip.position;
-        }
-        
-        public GameObject getProjectile()
-        {
-            return generatedPlayerProjectile;
-        }
+      
     }
 }

@@ -42,12 +42,12 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "ActivateAbility",
+                    "name": "Dash",
                     "type": "Button",
                     "id": "0b2d3f2b-6996-49bd-8261-c1b96fe9fa50",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold",
+                    "interactions": "Tap",
                     "initialStateCheck": false
                 }
             ],
@@ -219,17 +219,6 @@
                 },
                 {
                     "name": "",
-                    "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Fire",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "05f6913d-c316-48b2-a6bb-e225f14c7960",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -274,6 +263,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d0c2699e-f4b3-422f-86ac-992b4174f977",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "27b0c785-f5f5-4269-8f35-889c0cb83c49",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -285,12 +285,34 @@
                 },
                 {
                     "name": "",
+                    "id": "02a26fa5-d3d2-47fa-bf99-781ec37715bb",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "16c065e5-cb65-40d8-9c36-8e5fd519ade9",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad;Keyboard&Mouse",
-                    "action": "ActivateAbility",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "378240b5-ded2-4a58-8213-5fcfcb51a6c1",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

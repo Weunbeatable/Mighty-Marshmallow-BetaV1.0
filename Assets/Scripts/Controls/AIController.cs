@@ -16,11 +16,6 @@ namespace RPG.Control
         [SerializeField] float patrolSpeed = 2f;
         [SerializeField] float suspicionTime = 5f;
         float timeSinceLastSawPlayer = Mathf.Infinity;
-        Vector2 guardingLocation;
-        Vector2 Starting_Facing_Position;
-        Vector2 FinalFacingPosition;
-       
-        
 
 
         // Class refrences
@@ -29,6 +24,8 @@ namespace RPG.Control
         GameObject player;
         Transform target;
         private Rigidbody2D myRigidbody;
+        public EnemyCombat combat;
+        Vector2 targetPosition;
        
 
        
@@ -51,21 +48,19 @@ namespace RPG.Control
             myRigidbody = GetComponent<Rigidbody2D>();
             fighter = GetComponent<Fighting>();
             health = GetComponent<Health>();
-            guardingLocation = this.transform.position;
-            Starting_Facing_Position = this.transform.localScale *-1 ;
-            FinalFacingPosition = this.transform.localScale * -1;
-           
-            
+               
         }
         private void Update()
         {
+            targetPosition = this.transform.position;
             if (health.IsDead()) return;
-            DirectionToFace();
             if (attackRangeofPlayer() && facingPlayer())
             {
-                EngageBehavior();
-                timeSinceLastSawPlayer = 0f;
-                AttackBehavior();
+              
+                    EngageBehavior();
+                    timeSinceLastSawPlayer = 0f;
+   
+                
             }
             else if (!attackRangeofPlayer() && timeSinceLastSawPlayer < suspicionTime)
             {
@@ -80,21 +75,21 @@ namespace RPG.Control
             updateTimers();
         }
 
-        private void DirectionToFace()
+        private void DirectionToFace()// c ourtesy of unity forums
         {
-            if (patrolPath.GetNextIndex(currentWaypointIndex) == 1)
+            if (targetPosition.x - this.transform.position.x < 0)
             {
                
-                 this.transform.localScale =  new Vector2(-1, 1);
-                
-
+                // this.transform.localScale =  new Vector2(-1, 1);
+                 this.transform.rotation = new Quaternion(0, 0, 0, 0); // changing rotating  so I don't have to modify facing player bool
             }
-            else if (patrolPath.GetNextIndex(currentWaypointIndex) == patrolPath.GetNextIndex(currentWaypointIndex))
+            else if (targetPosition.x - this.transform.position.x > 0)
                 {
                 //  Vector2 flipSIdes = this.transform.localScale;
-                this.transform.localScale = new Vector2(1, 1);
-              
+               // this.transform.localScale = new Vector2(1, 1);
+                this.transform.rotation = new Quaternion(0, -180, 0, 0);
             }
+           
         }
 
         private void updateTimers()
@@ -141,7 +136,8 @@ namespace RPG.Control
         {
             Vector2 nextPosition = GetCurrentWaypoint();
             float regularSpeed = patrolSpeed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, nextPosition, regularSpeed);       
+            transform.position = Vector2.MoveTowards(transform.position, nextPosition, regularSpeed);
+            DirectionToFace();
         }
         
 
@@ -153,7 +149,6 @@ namespace RPG.Control
         private void CycleWaypoint()
         {
             currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex);
-
         }
 
         private bool atWaypoint()
@@ -179,9 +174,16 @@ namespace RPG.Control
 
         private void EngageBehavior()
         {
-            float regularSpeed = engageDistace * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, regularSpeed);
-            GetComponent<Animator>().SetTrigger("walk");
+            if (CanAttack())
+            {
+                AttackBehavior();
+            }
+            else
+            {
+                float regularSpeed = engageDistace * Time.deltaTime;
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, regularSpeed);
+                GetComponent<Animator>().SetTrigger("walk");
+            }
         }
         public void AttackBehavior()
         {
@@ -189,13 +191,26 @@ namespace RPG.Control
             RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right);
 
             // If it hits something...
-            if (hitInfo)
+            if (hitInfo.transform.gameObject.tag == "Hero")
             {
                 print("It's time to attack");
+                
             }
+            combat.CombatAttackTypeCheck();
         }
          
-       
+       private bool CanAttack()
+        {
+            bool callAttack;
+            float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position);
+            if ( distanceToPlayer < engageDistace)
+            {
+                callAttack = false;
+            }
+            else
+                callAttack = true;
+            return callAttack;
+        }
         // Called by Unity
         private void OnDrawGizmosSelected()
         {
