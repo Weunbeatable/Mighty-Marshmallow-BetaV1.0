@@ -20,19 +20,6 @@ public class Health : MonoBehaviour
     {
         DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
 
-        if(thisBody.tag == "Hero")
-        {
-            if (thisBody.IsTouchingLayers(LayerMask.GetMask(/*"Enemies"*/ "Hazards")))
-            {
-                //playerAnimations.SetTrigger("isDead");
-                // playerBody.velocity = deathFling;
-                //ShakeCamera();
-                //applyCameraShake = true;
-                die();
-                StartCoroutine(FindObjectOfType<GameSession>().ProcessPlayerDeath());
-            }
-        }
-
         if (damageDealer != null)
         {
             TakeDamage(damageDealer.GetDamage());

@@ -4780,7 +4780,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1315345765
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: -5
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -9593,7 +9593,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1315345765
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -9641,6 +9641,8 @@ GameObject:
   - component: {fileID: 1421490846287628551}
   - component: {fileID: 1346354822}
   - component: {fileID: 1346354834}
+  - component: {fileID: 1346354840}
+  - component: {fileID: 1346354847}
   m_Layer: 8
   m_Name: Tryhard (Player)
   m_TagString: Hero
@@ -9726,7 +9728,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1315345765
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 6934013284892070054, guid: 4e0fc7cde14ecc846b417aceac4ebf3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9803,18 +9805,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RunSpeed: 5
-  jumpSpeed: 13
   ClimbSpeed: 5
   dashBoostSpeed: 5
   deathFling: {x: 20, y: 20}
   hurtFling: {x: 4, y: 4}
-  generatedPlayerProjectile: {fileID: 7467877922243349983, guid: b4cb2294ffb1d59488acf13d94878125, type: 3}
-  swordSlashTip: {fileID: 7790202718725254605}
-  applyCameraShake: 1
   PlayerHasAirTime: 0
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+  jumpSpeed: 13
   dust: {fileID: 6761445539029457314}
   FlashStep: {fileID: 2663188581475950341}
-  attackRate: 1
+  applyCameraShake: 1
   DashTrail: {fileID: 877981996377803745}
 --- !u!70 &1346354822
 CapsuleCollider2D:
@@ -9858,6 +9859,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23, y: 0.15}
   m_EdgeRadius: 0
+--- !u!114 &1346354840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6043018365492575969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0d68e67518f1a4db75b09773d02518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generatedPlayerProjectile: {fileID: 7467877922243349983, guid: b4cb2294ffb1d59488acf13d94878125, type: 3}
+  swordSlashTip: {fileID: 8359000805872210630}
+  attackRate: 1
+--- !u!114 &1346354847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6043018365492575969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f7e81a052a993f439af325d62138874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
+  deathFling: {x: 10, y: 10}
+  hurtFling: {x: 4, y: 4}
 --- !u!1 &8174393693149468101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9961,7 +9992,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1315345765
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Time: 0.5
   m_Parameters:

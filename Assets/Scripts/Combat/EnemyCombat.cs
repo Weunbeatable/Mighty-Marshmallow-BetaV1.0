@@ -44,7 +44,7 @@ public class EnemyCombat : MonoBehaviour
         EnemyProjectile();
         GetComponent<Animator>().SetTrigger("Attack");
         
-        Debug.Log("aerial type");
+      //  Debug.Log("aerial type");
 
     }
 
@@ -52,13 +52,13 @@ public class EnemyCombat : MonoBehaviour
     {
         GetComponent<Animator>().SetTrigger("Attack");
         EnemyProjectile();
-        Debug.Log("ground range type");
+       // Debug.Log("ground range type");
     }
 
     public void GroundMeleeCombatBehaviour()
     {
         GetComponent<Animator>().SetTrigger("Attack");
-        Debug.Log("Melee type");
+      //  Debug.Log("Melee type");
     }
 
 

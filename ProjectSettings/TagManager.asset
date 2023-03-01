@@ -23,7 +23,7 @@ TagManager:
   - Hazards
   - Projectiles
   - Interactables
-  - 
+  - PaintedBackground
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 42116503
+    locked: 0
+  - name: Backdrop
+    uniqueID: 4032710995
     locked: 0
   - name: Water
     uniqueID: 626078985

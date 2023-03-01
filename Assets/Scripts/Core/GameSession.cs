@@ -11,6 +11,8 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] public TextMeshProUGUI ScoreText;
     [SerializeField] int score = 0;
+    //[SerializeField]  Health playerHealth;
+    float initialHealth;
     private void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -27,6 +29,8 @@ public class GameSession : MonoBehaviour
     {
         livesText.text = playerLives.ToString();
         ScoreText.text = score.ToString();
+      //  playerHealth.GetComponent<Health>();
+      //  initialHealth = playerHealth.HealthValue();
     }
     public IEnumerator ProcessPlayerDeath()
     {

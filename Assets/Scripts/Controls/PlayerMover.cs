@@ -51,7 +51,10 @@ namespace TMM.Control
 
         // placeholder for combat system
         DamageDealer damagedealt;
-       
+        Health health;
+
+        //Ghost coordinates
+        Queue<Vector2> playersInputs = new Queue<Vector2>();
         private void Awake()
         {
             cameraShake = Camera.main.GetComponent<CameraShake>();
@@ -70,6 +73,7 @@ namespace TMM.Control
             playerCollider = GetComponent<CapsuleCollider2D>();
             myFeetCollider = GetComponent<BoxCollider2D>();
             damagedealt = GetComponent<DamageDealer>();
+            health = GetComponent<Health>();
             startingGravity = playerBody.gravityScale;
             isAlive = true;
             InputValue value;
@@ -91,9 +95,23 @@ namespace TMM.Control
           // startDash();
             //lightDash();
             Die();
-
+            LogJourney();
+           
         }
 
+        public Vector2 LogJourney()
+        {
+            Queue<Vector2> mySteps = playersInputs;
+            if (playersInputs.Count < 1000)
+            {
+                playersInputs.Enqueue(this.transform.position);
+                Debug.Log("Adding input  value is " + playersInputs.Count);
+            }
+            Debug.Log(mySteps.Count);
+            
+                return playersInputs.Dequeue();
+           
+        }
 
         private void FixedUpdate()
         {
@@ -258,9 +276,9 @@ namespace TMM.Control
                  playerBody.velocity = hurtFling;
              }
          }*/
-        private void Die()
+        public void Die()
         {
-            if (playerBody.IsTouchingLayers(LayerMask.GetMask(/*"Enemies"*/, "Hazards")))
+            if (playerBody.IsTouchingLayers(LayerMask.GetMask(/*"Enemies"*/ "Hazards")))
             {
                 isAlive = false;
                 playerAnimations.SetTrigger("isDead");
@@ -321,6 +339,9 @@ namespace TMM.Control
             yield return new WaitForSeconds(dashingCooldown); // cooldown for dashing.
             canDash = true;
         }
+
+        
+         
       
     }
 }

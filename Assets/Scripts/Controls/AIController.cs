@@ -54,18 +54,18 @@ namespace RPG.Control
         {
             targetPosition = this.transform.position;
             if (health.IsDead()) return;
-            if (attackRangeofPlayer() && facingPlayer())
-            {
-              
+            if (player == null) { player = GameObject.FindWithTag("Hero"); }
+                if (attackRangeofPlayer() && facingPlayer())
+                {
                     EngageBehavior();
                     timeSinceLastSawPlayer = 0f;
-   
-                
-            }
-            else if (!attackRangeofPlayer() && timeSinceLastSawPlayer < suspicionTime)
-            {
-                SuspicionBehavior();
-            }
+                }
+
+                else if (!attackRangeofPlayer() && timeSinceLastSawPlayer < suspicionTime)
+                {
+                    SuspicionBehavior();
+                }
+            
             else
             {
                 // print("I'm going back home");
@@ -174,7 +174,7 @@ namespace RPG.Control
 
         private void EngageBehavior()
         {
-            if (CanAttack())
+            if (CanAttack() == false)
             {
                 AttackBehavior();
             }
@@ -188,14 +188,14 @@ namespace RPG.Control
         public void AttackBehavior()
         {
             // Cast a ray straight down.
-            RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right);
+           /* RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right);
 
             // If it hits something...
             if (hitInfo.transform.gameObject.tag == "Hero")
             {
                 print("It's time to attack");
                 
-            }
+            }*/
             combat.CombatAttackTypeCheck();
         }
          
@@ -205,10 +205,10 @@ namespace RPG.Control
             float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position);
             if ( distanceToPlayer < engageDistace)
             {
-                callAttack = false;
+                callAttack = true;
             }
             else
-                callAttack = true;
+                callAttack = false;
             return callAttack;
         }
         // Called by Unity
