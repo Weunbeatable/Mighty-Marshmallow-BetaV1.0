@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMM.core;
-
+using TMM.Control;
 public class Health : MonoBehaviour
 {
     [SerializeField] float healthPoints = 100f;
@@ -23,19 +23,26 @@ public class Health : MonoBehaviour
         if (damageDealer != null)
         {
             TakeDamage(damageDealer.GetDamage());
-            damageDealer.GetDamage();
+            //damageDealer.GetDamage();
         }
     }
 
     public void TakeDamage(int damage)
     {
+        
         healthPoints = Mathf.Max(healthPoints - damage, 0);
-        print(healthPoints);
-        thisBody.velocity = hurtFling;
+       // print(healthPoints);
+        HurtAnim();
         if (healthPoints <= 0)
         {
-            die();
-            StartCoroutine(ProcessDeath());
+            if (this.gameObject.tag == "Hero")
+{
+                this.gameObject.GetComponent<PlayerMover>();
+            }
+            else {
+                die();
+                StartCoroutine(ProcessDeath());
+            }
         }
 
     }
@@ -54,7 +61,15 @@ public class Health : MonoBehaviour
        GetComponent<Animator>().SetTrigger("die");
       // GetComponent<ActionScheduler>().CancelCurrentACtion();
     }
-
+    void HurtAnim()
+    {
+        AnimatorStateInfo currentInfo = GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
+        if (currentInfo.normalizedTime < 1f)
+        {
+            GetComponent<Animator>().SetTrigger("Hurt");
+            thisBody.velocity = hurtFling;
+        }
+    }
     public float HealthValue()
     {
         return healthPoints;

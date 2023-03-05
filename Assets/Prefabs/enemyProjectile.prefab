@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1289475094543105860}
   - component: {fileID: 7128426997340248453}
   - component: {fileID: 1542959949403211752}
+  - component: {fileID: 2034984940}
   m_Layer: 11
   m_Name: enemyProjectile
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1315345765
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bead47d786e844adba7899d02e8851eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -160,3 +161,16 @@ MonoBehaviour:
   HadoukenSpeed: 7
   HadoukenDamage: 12
   zFacing: -200
+--- !u!114 &2034984940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7467877922243349983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2aa819fbf1018743860f58b1eb60cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20

@@ -161,8 +161,13 @@ namespace RPG.Control
 
         private bool attackRangeofPlayer()
         {
-            float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position);
-            return distanceToPlayer < chaseDistance;
+            if (player != null)
+            {
+                float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position);
+
+                return distanceToPlayer < chaseDistance;
+            }
+            else return false;
         }
 
         private bool facingPlayer()

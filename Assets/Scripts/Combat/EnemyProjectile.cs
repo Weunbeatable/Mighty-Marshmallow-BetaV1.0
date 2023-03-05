@@ -53,11 +53,11 @@ public class EnemyProjectile : MonoBehaviour
         if (collision.gameObject.tag == "Hero")
         {
             Health healthAspect = collision.gameObject.GetComponent<Health>();
-            healthAspect.TakeDamage(HadoukenDamage);
-            print("I Hit you");
+           // healthAspect.TakeDamage(HadoukenDamage);
+            //print("I Hit you");
             DamageDealer damagedealt = GetComponent<DamageDealer>();
             damagedealt.GetDamage();
-            Destroy(collision.gameObject);
+          
             Destroy(gameObject);
         }
         else

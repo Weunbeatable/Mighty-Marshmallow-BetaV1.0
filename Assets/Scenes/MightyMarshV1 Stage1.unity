@@ -341,7 +341,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.80778897, y: 1}
+    m_SensorSize: {x: 0.778481, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.80778897, y: 1}
+    m_SensorSize: {x: 0.778481, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1659,10 +1659,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1289475094543105860, guid: dc574f588147bd64780bf98649858190, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1406675409293164155, guid: dc574f588147bd64780bf98649858190, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1710,10 +1706,6 @@ PrefabInstance:
     - target: {fileID: 7467877922243349983, guid: dc574f588147bd64780bf98649858190, type: 3}
       propertyPath: m_Name
       value: enemyProjectile
-      objectReference: {fileID: 0}
-    - target: {fileID: 7467877922243349983, guid: dc574f588147bd64780bf98649858190, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc574f588147bd64780bf98649858190, type: 3}
@@ -1797,7 +1789,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.80778897, y: 1}
+    m_SensorSize: {x: 0.778481, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8471,7 +8463,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.80778897, y: 1}
+    m_SensorSize: {x: 0.778481, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

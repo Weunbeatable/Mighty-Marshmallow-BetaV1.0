@@ -9808,7 +9808,7 @@ MonoBehaviour:
   ClimbSpeed: 5
   dashBoostSpeed: 5
   deathFling: {x: 20, y: 20}
-  hurtFling: {x: 4, y: 4}
+  hurtFling: {x: 7.46, y: 8.28}
   PlayerHasAirTime: 0
   fallMultiplier: 2.5
   lowJumpMultiplier: 2

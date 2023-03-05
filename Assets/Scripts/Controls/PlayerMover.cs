@@ -105,9 +105,9 @@ namespace TMM.Control
             if (playersInputs.Count < 1000)
             {
                 playersInputs.Enqueue(this.transform.position);
-                Debug.Log("Adding input  value is " + playersInputs.Count);
+             //   Debug.Log("Adding input  value is " + playersInputs.Count);
             }
-            Debug.Log(mySteps.Count);
+          //  Debug.Log(mySteps.Count);
             
                 return playersInputs.Dequeue();
            
@@ -288,6 +288,16 @@ namespace TMM.Control
                 applyCameraShake = true;
                 StartCoroutine(FindObjectOfType<GameSession>().ProcessPlayerDeath());
 
+            }
+            else if(this.gameObject.GetComponent<Health>().HealthValue() <= 0f)
+            {
+                isAlive = false;
+                playerAnimations.SetTrigger("isDead");
+                playerBody.velocity = deathFling;
+
+                ShakeCamera();
+                applyCameraShake = true;
+                StartCoroutine(FindObjectOfType<GameSession>().ProcessPlayerDeath());
             }
         }
 
