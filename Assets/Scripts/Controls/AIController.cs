@@ -9,7 +9,7 @@ using System;
 namespace RPG.Control
 {
     public class AIController:MonoBehaviour
-    {   [Tooltip("Patroll Behavior")]
+    {   [Tooltip("Patroll Behavior")] // Variables should be pre-declared to save time. 
 
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float engageDistace = 2f;
@@ -27,6 +27,7 @@ namespace RPG.Control
         public EnemyCombat combat;
         Vector2 targetPosition;
        
+        // Assumption: - all patrol path code is already created, the logic is the only thing that needs to be explained. 
 
        
         
@@ -148,13 +149,13 @@ namespace RPG.Control
 
         private void CycleWaypoint()
         {
-            currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex);
+            currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex); 
         }
 
         private bool atWaypoint()
         {
             float distanceToWaypoint = Vector2.Distance(transform.position, GetCurrentWaypoint());
-            GetComponent<Animator>().SetTrigger("idle");
+            GetComponent<Animator>().SetTrigger("idle"); // not using animator in example... probably ....
             // Debug.Log("waypointdistance is" + distanceToWaypoint);
             return distanceToWaypoint < waypointTolerance;
         }
@@ -163,7 +164,7 @@ namespace RPG.Control
         {
             if (player != null)
             {
-                float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position);
+                float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position); // vector2.square Magnitude is faster but for such a arbitrarily small task it doesn't really matter in this example. 
 
                 return distanceToPlayer < chaseDistance;
             }
@@ -172,7 +173,7 @@ namespace RPG.Control
 
         private bool facingPlayer()
         {
-            float dot = Vector2.Dot(transform.right, (player.transform.position - transform.position).normalized);
+            float dot = Vector2.Dot(transform.right, (player.transform.position - transform.position).normalized); // Call vector 3 for dot product 
             float fov = 0.7f; // Field of View of AI, may make it adjustable for enemy types at some point.
             return dot > fov;
         }
@@ -207,7 +208,7 @@ namespace RPG.Control
        private bool CanAttack()
         {
             bool callAttack;
-            float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position);
+            float distanceToPlayer = Vector2.Distance(player.transform.position, transform.position); // call V3 here instead, 
             if ( distanceToPlayer < engageDistace)
             {
                 callAttack = true;

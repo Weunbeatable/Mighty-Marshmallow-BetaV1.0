@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TMM.Control
+// framework of stimulus and simulate possibilites and explain enemies are reactive
+// difference between the two types
+namespace TMM.Control // Can probably just have this premade. Create AI namespace, maybe movement namespace. POSSIBLY combat namespace 
 {
     public class PatrolPath : MonoBehaviour
     {
-        private void OnDrawGizmos()
+        private void OnDrawGizmos() // Visual to help understand patrol path, This should just be added in, and explained away to the kids later. 
         {
             const float waypointGizmoRadius = 0.2f;
             for (int i = 0; i < transform.childCount; i++)

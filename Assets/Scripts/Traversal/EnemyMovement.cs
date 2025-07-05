@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
     {
        // Health myHealth = GetComponent<Health>();
        // if (myHealth.HealthValue() < 0) { isAlive = false; }
-        if (!isAlive) { return; }
+        if (!isAlive) { return; } // base state for player living (this can be abstracted and really doesn't matter for the sake of the example.)
         myRigidbody.velocity = new Vector2 (moveSpeed, 0f);
     }
 
@@ -32,10 +32,13 @@ public class EnemyMovement : MonoBehaviour
     }
 
 
-    private void FlipEnemyFacing()
+    private void FlipEnemyFacing() // needed for pathfinding but this will be re-evaluated for 3D space. 
     {
         if (!isAlive) { return; }
         transform.localScale = new Vector2(-(Mathf.Sign(myRigidbody.velocity.x)), 1f);
     }
 
+
+// TODO:
+// Add block to handle direction facing for 3D example. 
 }
