@@ -24,7 +24,7 @@ TagManager:
   - Projectiles
   - Interactables
   - PaintedBackground
-  - 
+  - Wall
   - 
   - 
   - 
@@ -57,6 +57,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 2670490711
+    locked: 0
+  - name: Wall
+    uniqueID: 2636723925
     locked: 0
   - name: Hazards
     uniqueID: 3546996043

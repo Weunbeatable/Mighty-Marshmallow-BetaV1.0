@@ -16,7 +16,7 @@ namespace TMM.Control
         [SerializeField] float dashBoostSpeed = 5f;
         [SerializeField] Vector2 deathFling = new Vector2(10f, 10f);
         [SerializeField] Vector2 hurtFling = new Vector2(4f, 4f);
-        
+
 
         [Header("JumpTools")]
         public bool PlayerHasAirTime;
@@ -47,7 +47,7 @@ namespace TMM.Control
         private float dashingStrength = 10f;
         private float dashingTime = 0.2f;
         private float dashingCooldown = 1f;
-        
+
 
         // placeholder for combat system
         DamageDealer damagedealt;
@@ -77,8 +77,8 @@ namespace TMM.Control
             startingGravity = playerBody.gravityScale;
             isAlive = true;
             InputValue value;
-        
-            }
+
+        }
 
 
         // Update is called once per frame
@@ -92,11 +92,11 @@ namespace TMM.Control
             playerIsFalling();
             playerIsJumping();
             PlayerIdleAnim();
-          // startDash();
+            // startDash();
             //lightDash();
             Die();
             LogJourney();
-           
+
         }
 
         public Vector2 LogJourney()
@@ -105,12 +105,12 @@ namespace TMM.Control
             if (playersInputs.Count < 1000)
             {
                 playersInputs.Enqueue(this.transform.position);
-             //   Debug.Log("Adding input  value is " + playersInputs.Count);
+                //   Debug.Log("Adding input  value is " + playersInputs.Count);
             }
-          //  Debug.Log(mySteps.Count);
-            
-                return playersInputs.Dequeue();
-           
+            //  Debug.Log(mySteps.Count);
+
+            return playersInputs.Dequeue();
+
         }
 
         private void FixedUpdate()
@@ -119,24 +119,35 @@ namespace TMM.Control
             if (jumpRequest)
             {
                 {
-                    //playerBody.velocity += new Vector2(0f, jumpSpeed);
-                    playerBody.AddForce(new Vector2(0f, jumpSpeed), ForceMode2D.Impulse);
-                    CreateDust();
-                    jumpRequest = false;
-                   
+                    if (IsAttemptingWallJump())
+                    {
+                        Debug.Log("Current velocity is " + playerBody.velocity.x);
+                        playerBody.AddForce(new Vector2(((playerBody.velocity.x * jumpSpeed/3) * -1f), jumpSpeed / 3), ForceMode2D.Impulse);
+                        flipSprite();
+                        Debug.Log("Current wall jump values are " + playerBody.velocity.x +  " and" + playerBody.velocity.y);
+                    }
+                    else
+                    {
+                        //playerBody.velocity += new Vector2(0f, jumpSpeed);
+                        playerBody.AddForce(new Vector2(0f, jumpSpeed), ForceMode2D.Impulse);
+                        CreateDust();
+                        jumpRequest = false;
+                    }
+
+
                 }
 
             }
 
-         /*   else if (!jumpRequest && PlayerhasVerticalSpeed)
-            {
-                playerBody.gravityScale = lowJumpMultiplier;
-                // playerBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-            }
-            else
-            {
-                playerBody.gravityScale = 1;
-            }*/
+            /*   else if (!jumpRequest && PlayerhasVerticalSpeed)
+               {
+                   playerBody.gravityScale = lowJumpMultiplier;
+                   // playerBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+               }
+               else
+               {
+                   playerBody.gravityScale = 1;
+               }*/
         }
 
 
@@ -151,14 +162,15 @@ namespace TMM.Control
         void OnJump(InputValue value)
         {
             if (!isAlive) { return; }
+            if (IsAttemptingWallJump() && playerBody.velocity.y != 0f) { jumpRequest = true; }
             bool PlayerhasVerticalSpeed = Mathf.Abs(playerBody.velocity.y) > 0f;
             if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
-
+            
 
             if (value.isPressed)
             {
                 jumpRequest = true;
-         
+
             }
 
             /* if (Mathf.Abs(playerBody.velocity.y) > 0f && !value.isPressed )
@@ -169,9 +181,15 @@ namespace TMM.Control
             // playerAnimations.SetBool("isFalling", false);*
         }
 
+        private bool IsAttemptingWallJump()
+        {
+            return playerCollider.IsTouchingLayers(LayerMask.GetMask("Wall")) && moveInput.x < 0 ||
+                   playerCollider.IsTouchingLayers(LayerMask.GetMask("Wall")) && moveInput.x > 0;
+        }
+
         //TO DO decouple fire from player mover into combat namespace/ combat class. 
 
-        
+
         void playerIsFalling()
         {
             if (!isAlive) { return; }
